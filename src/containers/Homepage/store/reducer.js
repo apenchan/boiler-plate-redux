@@ -1,12 +1,12 @@
 import * as Action from "./actionTypes";
 const initState = {
-  chores: []
+  coordinates: []
 };
 const Homepage = (state = initState, action) => {
   switch (action.type) {
-    case Action.GET_ALL_DATA_TEST:
+    case Action.GET_ALL_CORDINATES_SUCCESS:
       return {
-        chores: action.data
+        coordinates: action.coordinates
       };
     default:
       return state;
